@@ -7,45 +7,52 @@ public class MoveZeroes {
         int[] arr = new int[]{1, 0, 2, 0, 0, 0, 4, 5, 6, 7};
         //expected output :> [10,3,20,1,2,0,0,0]
 
-//        sort(arr);
-        moveZeroes(arr, 0);
+        System.out.println(Arrays.toString(mergeSort(arr)));
     }
 
-    public static void sort(int[] arr) {
-        int start = 0;
-        int end = arr.length - 1;
-        while (start <= end) {
-            if (arr[start] == 0) {
+    public static int[] mergeSort(int[] arr) {
 
-                int index = start;
-                while (index != end - 1) {
-                    arr[index] = arr[index + 1];
-                    index++;
-                }
-                arr[end] = 0;
-                end--;
-            } else {
-                start++;
-            }
+        if(arr.length ==1){
+            return arr;
         }
-        System.out.println(Arrays.toString(arr)); //done but O(n^2)
-        //[1, 2, 4, 5, 6, 6, 0, 0, 0, 0]
+       int mid = arr.length/2;
+
+       int[] left = mergeSort(Arrays.copyOfRange(arr,0,mid));
+       int[] right = mergeSort(Arrays.copyOfRange(arr,mid,arr.length));
+
+       return merge(arr,left,right);
     }
 
-    public static void moveZeroes(int[] nums, int count) {
-        int left = 0;
+    static int[] merge(int[] arr,int[] left,int[] right)
+    {
+        int[] merged = new int[left.length +right.length];
+        int i=0;
+        int j =0;
+        int k= 0 ;
+        while(i<left.length && j<right.length) {
+            if (left[i] > right[j]) {
+                merged[k] = left[i];
+                i++;
 
-        for (int right = 0; right < nums.length; right++) {
-            if (nums[right] != 0) {
-                int temp = nums[right];
-                nums[right] = nums[left];
-                nums[left] = temp;
-                left++;
+            } else {
+                merged[k] = right[j];
+                j++;
             }
-    }
+            k++;
+        }
 
-        System.out.println(Arrays.toString(nums));
+        while(i<left.length){
+            merged[k] = left[i];
+            i++;
+            k++;
+        }
 
-
+        while(j<right.length)
+        {
+            merged[k]=right[j];
+            j++;
+            k++;
+        }
+        return merged;
     }
 }
