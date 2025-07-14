@@ -16,17 +16,18 @@ public class FindNZeroesInFactorial {
 //        }
 
         int start = 0;
-        int end = 5 * n;
+        int end = 5*n;
         int result = -1;
 
         while (start <= end) {
             int mid = (start+end) / 2;
             int zeroCount = getCount2(mid);
 
-            if (zeroCount == n) {
+            if(zeroCount == n) {
                 result = mid;
                 end = mid - 1;
-            } else if (zeroCount < n) {
+            } else
+                if(zeroCount < n){
                 start = mid + 1;
             } else {
                 end = mid - 1;
