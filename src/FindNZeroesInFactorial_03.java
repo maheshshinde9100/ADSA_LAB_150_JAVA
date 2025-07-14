@@ -1,4 +1,4 @@
-public class FindNZeroesInFactorial {
+public class FindNZeroesInFactorial_03 {
     public static void main(String[] args) {
         int n = 3;
         System.out.println(search(n));
