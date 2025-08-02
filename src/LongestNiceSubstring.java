@@ -1,3 +1,4 @@
+import java.util.*;
 class LongestNiceSubstring {
     public String longestNiceSubstring(String s) {
         return divideAndConquer(s);

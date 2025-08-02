@@ -1,3 +1,4 @@
+import java.lang.*;
 class FindMinRotatedSortedArray {
     public int findMin(int[] nums) {
         return binarySearch(nums,0,nums.length-1);
