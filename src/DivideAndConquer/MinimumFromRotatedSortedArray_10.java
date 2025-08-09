@@ -1,4 +1,4 @@
-package tasks;
+package DivideAndConquer;
 
 public class MinimumFromRotatedSortedArray_10 {
         public int findMin(int[] nums) {

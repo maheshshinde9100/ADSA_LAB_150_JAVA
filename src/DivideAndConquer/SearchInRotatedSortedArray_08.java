@@ -1,4 +1,4 @@
-package tasks;
+package DivideAndConquer;
 //Sorted rotated array - search element and return index if found otherwise return -1
 public class SearchInRotatedSortedArray_08 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package tasks;
+package DivideAndConquer;
 import java.util.*;
 /*
 * Input: 'arr1' = [2, 3, 45], 'arr2' = [4, 6, 7, 8] and 'k' = 4

@@ -1,4 +1,4 @@
-package tasks;
+package DivideAndConquer;
 import java.util.*;
 /*
 Given a list of buildings, each represented as [left, right, height], return the skyline as a list of [x, height] key points.

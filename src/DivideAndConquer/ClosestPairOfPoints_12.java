@@ -1,4 +1,4 @@
-package tasks;
+package DivideAndConquer;
 import java.util.*;
 
 class Point {

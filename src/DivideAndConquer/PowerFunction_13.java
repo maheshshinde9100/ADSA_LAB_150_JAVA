@@ -1,4 +1,4 @@
-package tasks;
+package DivideAndConquer;
 
 public class PowerFunction_13 {
     public static double myPow(double x, int n) {

@@ -1,5 +1,5 @@
 //leetcode : https://leetcode.com/problems/different-ways-to-add-parentheses/description/
-package tasks;
+package DivideAndConquer;
 
 import java.util.*;
 public class WaysToAddParanthesis_06 {

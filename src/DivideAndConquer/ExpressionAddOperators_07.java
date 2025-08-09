@@ -1,4 +1,4 @@
-package tasks;
+package DivideAndConquer;
 import java.util.*;
 
 /*Q. Insert operators between digits to match a target value

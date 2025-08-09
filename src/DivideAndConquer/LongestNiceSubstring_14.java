@@ -1,4 +1,4 @@
-package tasks;
+package DivideAndConquer;
 
 public class LongestNiceSubstring_14 {
 

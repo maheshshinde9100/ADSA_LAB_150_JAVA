@@ -1,4 +1,4 @@
-package tasks;
+package DivideAndConquer;
 import java.util.Arrays;
 public class CountInversion_11 {
 

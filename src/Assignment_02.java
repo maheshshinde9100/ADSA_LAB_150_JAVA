@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class MoveZeroes_02 {
+public class Assignment_02 {
     public static void main(String[] args) {
         //place all zeroes at the end of the array
         int[] arr = new int[]{1, 0, 2, 0, 0, 0, 4, 5, 6, 7};

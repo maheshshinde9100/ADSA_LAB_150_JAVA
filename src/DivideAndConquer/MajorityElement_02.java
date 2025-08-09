@@ -1,6 +1,4 @@
-package tasks;
-
-import java.util.Arrays;
+package DivideAndConquer;
 
 /*Find the element appearing more than [n/2] times using divide and conquer technique*/
 public class MajorityElement_02 {
