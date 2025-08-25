@@ -1,14 +1,15 @@
-package GreedyApproach;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+public class Assignment_06 {
 
-public class Stocks02 {
     public static void main(String[] args) {
-        int[] arr = new int[]{4,7,8,12};
+        int[] arr = new int[]{4, 7, 8, 12};
         List<Integer> profit = new ArrayList<>();
 //        calculate(arr,profit,totalBuy);
-        System.out.println("Max Profit :> "+calculateMaxProfit(arr));
+        System.out.println("Max Profit :> " + calculateMaxProfit(arr));
     }
-//    static void calculate(int[] arr,List<Integer> profit, int totalBuy){
+
+    //    static void calculate(int[] arr,List<Integer> profit, int totalBuy){
 //        for(int i=1;i<arr.length;i++){
 //            if(arr[i] > arr[i-1]){
 //                profit.add(arr[i]-arr[i-1]);
@@ -19,8 +20,8 @@ public class Stocks02 {
 //    }
     static int getMaxProfit(List<Integer> arr) {
         int max = arr.get(0);
-        for (int i = 1; i < arr.size(); i++){
-            max = Math.max(arr.get(i),max);
+        for (int i = 1; i < arr.size(); i++) {
+            max = Math.max(arr.get(i), max);
         }
         return max;
     }
@@ -33,8 +34,8 @@ public class Stocks02 {
 
         int maxProfit = 0;
         for (int i = 1; i < arr.length; i++) {
-            if (arr[i]>arr[i - 1]) {
-                maxProfit = maxProfit + arr[i]-arr[i-1];
+            if (arr[i] > arr[i - 1]) {
+                maxProfit = maxProfit + arr[i] - arr[i - 1];
             }
         }
         return maxProfit;
